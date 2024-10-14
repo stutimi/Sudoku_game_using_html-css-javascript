@@ -1,0 +1,32 @@
+/* General styling for Sudoku grid */
+.sudoku-grid {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-gap: 1px;
+    background-color: #000;
+    width: max-content;
+    margin: auto;
+}
+
+.sudoku-cell {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 1.25rem;
+    background-color: white;
+    border: 1px solid #ddd;
+    color: #333;
+}
+
+/* Styling for cell focus and highlight */
+.sudoku-cell:focus {
+    outline: none;
+    background-color: #e2e8f0;
+}
+
+/* Highlighting for number cells */
+.sudoku-cell[data-highlight="true"] {
+    background-color: #f9fafb;
+    font-weight: bold;
+    color: #1e40af;
+}
